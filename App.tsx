@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import './config/firebase';
+import RootNavigation from './navigation/';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <RootNavigation />
       <StatusBar style="auto" />
     </View>
   );
